@@ -9,6 +9,7 @@
 #include "Shell.h"
 #include "CLS1.h"
 #include "LED1.h"
+#include "SERVO1.h"
 
 static const CLS1_ParseCommandCallback CmdParserTable[] =
 {
@@ -16,8 +17,8 @@ static const CLS1_ParseCommandCallback CmdParserTable[] =
 #if LED1_PARSE_COMMAND_ENABLED
   LED1_ParseCommand,
 #endif
-#if LEDG_PARSE_COMMAND_ENABLED
-  LEDG_ParseCommand,
+#if SERVO1_PARSE_COMMAND_ENABLED
+  SERVO1_ParseCommand,
 #endif
 #if LEDB_PARSE_COMMAND_ENABLED
   LEDB_ParseCommand,

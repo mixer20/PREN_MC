@@ -41,6 +41,10 @@
 #include "CS1.h"
 #include "FRTOS1.h"
 #include "XF1.h"
+#include "SERVO1.h"
+#include "Pwm1.h"
+#include "PwmLdd1.h"
+#include "TU1.h"
 #include "Shell.h"
 #include "Application.h"
 /* Including shared modules, which are used for whole project */
