@@ -47,6 +47,8 @@
 #include "TU1.h"
 #include "ULTRA_TRIG.h"
 #include "ULTRA_TU2.h"
+#include "INF_AD1.h"
+#include "AdcLdd1.h"
 #include "Shell.h"
 #include "Application.h"
 /* Including shared modules, which are used for whole project */

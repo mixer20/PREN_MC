@@ -50,6 +50,10 @@
 #include "TU1.h"
 #include "ULTRA_TRIG.h"
 #include "ULTRA_TU2.h"
+#include "INF_AD1.h"
+#include "AdcLdd1.h"
+#include "Ultraschall.h"
+#include "Infrarot.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -171,6 +175,38 @@ void ULTRA_TU2_OnChannel0(LDD_TUserData *UserDataPtr);
 */
 /* ===================================================================*/
 void ULTRA_TU2_OnCounterRestart(LDD_TUserData *UserDataPtr);
+
+void INF_AD1_OnEnd(void);
+/*
+** ===================================================================
+**     Event       :  INF_AD1_OnEnd (module Events)
+**
+**     Component   :  INF_AD1 [ADC]
+**     Description :
+**         This event is called after the measurement (which consists
+**         of <1 or more conversions>) is/are finished.
+**         The event is available only when the <Interrupt
+**         service/event> property is enabled.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+
+void INF_AD1_OnCalibrationEnd(void);
+/*
+** ===================================================================
+**     Event       :  INF_AD1_OnCalibrationEnd (module Events)
+**
+**     Component   :  INF_AD1 [ADC]
+**     Description :
+**         This event is called when the calibration has been finished.
+**         User should check if the calibration pass or fail by
+**         Calibration status method./nThis event is enabled only if
+**         the <Interrupt service/event> property is enabled.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
 
 /* END Events */
 

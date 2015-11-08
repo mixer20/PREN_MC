@@ -6,6 +6,7 @@
 #include "LED1.h"
 #include "FRTOS1.h"
 #include "Shell.h"
+#include "Infrarot.h"
 
 static portTASK_FUNCTION(Task1, pvParameters) {
   (void)pvParameters; /* parameter not used */
@@ -18,6 +19,7 @@ static portTASK_FUNCTION(Task1, pvParameters) {
 void APP_Run(void) {
   SHELL_Init();
   US_Init();
+  INF_Init();
   if (FRTOS1_xTaskCreate(
         Task1,  /* pointer to the task */
         "Task1", /* task name for kernel awareness debugging */

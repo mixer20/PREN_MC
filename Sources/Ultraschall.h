@@ -11,6 +11,9 @@
 #include "ULTRA_TRIG.h"
 #include "ULTRA_TU2.h"
 
+void US_EventEchoOverflow(LDD_TUserData *UserDataPtr);
+void US_EventEchoCapture(LDD_TUserData *UserDataPtr);
+
 typedef enum {
   ECHO_IDLE, /* device not used */
   ECHO_TRIGGERED, /* started trigger pulse */

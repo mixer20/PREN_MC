@@ -191,6 +191,44 @@ void ULTRA_TU2_OnCounterRestart(LDD_TUserData *UserDataPtr)
 	US_EventEchoOverflow(UserDataPtr);
 }
 
+/*
+** ===================================================================
+**     Event       :  INF_AD1_OnEnd (module Events)
+**
+**     Component   :  INF_AD1 [ADC]
+**     Description :
+**         This event is called after the measurement (which consists
+**         of <1 or more conversions>) is/are finished.
+**         The event is available only when the <Interrupt
+**         service/event> property is enabled.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void INF_AD1_OnEnd(void)
+{
+	AD_finished = TRUE;
+}
+
+/*
+** ===================================================================
+**     Event       :  INF_AD1_OnCalibrationEnd (module Events)
+**
+**     Component   :  INF_AD1 [ADC]
+**     Description :
+**         This event is called when the calibration has been finished.
+**         User should check if the calibration pass or fail by
+**         Calibration status method./nThis event is enabled only if
+**         the <Interrupt service/event> property is enabled.
+**     Parameters  : None
+**     Returns     : Nothing
+** ===================================================================
+*/
+void INF_AD1_OnCalibrationEnd(void)
+{
+  /* Write your code here ... */
+}
+
 /* END Events */
 
 #ifdef __cplusplus
