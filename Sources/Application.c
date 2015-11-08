@@ -17,6 +17,7 @@ static portTASK_FUNCTION(Task1, pvParameters) {
 
 void APP_Run(void) {
   SHELL_Init();
+  US_Init();
   if (FRTOS1_xTaskCreate(
         Task1,  /* pointer to the task */
         "Task1", /* task name for kernel awareness debugging */
