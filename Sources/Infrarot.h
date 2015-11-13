@@ -10,6 +10,8 @@
 
 #include "FRTOS1.h"
 #include "INF_AD1.h"
+#include "WAIT1.h"
+#include "Shell.h"
 
 void INF_Init(void);
 

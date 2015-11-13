@@ -3,7 +3,7 @@
   <Header>
     <Name>PREN_MC_Project</Name>
     <SavedBy>kilian</SavedBy>
-    <ModificationStamp>27</ModificationStamp>
+    <ModificationStamp>29</ModificationStamp>
     <Date>2015-10-30</Date>
     <IDE>Eclipse IDE</IDE>
     <PEversion>1.12.0.RT7_b1515-0427</PEversion>
@@ -10022,8 +10022,8 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>1</Index>
-        <EnumSymbVal>M4</EnumSymbVal>
+        <Index>0</Index>
+        <EnumSymbVal>M0+</EnumSymbVal>
       </ItemState>
       <ItemState>
         <ItemSymbol>M4FFloatingPointSupport</ItemSymbol>
@@ -10038,7 +10038,7 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>5</Value>
+        <Value>1</Value>
         <Base>DEC</Base>
       </ItemState>
       <ItemState>
@@ -10046,13 +10046,13 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>15</Value>
+        <Value>3</Value>
         <Base>DEC</Base>
       </ItemState>
       <ItemState>
         <ItemSymbol>ARMLowestInterrutpPriority</ItemSymbol>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Value>15</Value>
+        <Value>3</Value>
         <Base>DEC</Base>
       </ItemState>
       <ItemState>
@@ -10073,7 +10073,7 @@
       </ItemState>
       <ItemState>
         <ItemSymbol>useARMSysTickUseCoreClock</ItemSymbol>
-        <ReadOnly>true</ReadOnly>
+        <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
         <Index>0</Index>
@@ -11966,8 +11966,8 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <PropertyModelIsAutomatic>false</PropertyModelIsAutomatic>
-        <Index>0</Index>
-        <Value>true</Value>
+        <Index>1</Index>
+        <Value>false</Value>
       </ItemState>
       <ItemState>
         <ItemSymbol>InitPWM</ItemSymbol>

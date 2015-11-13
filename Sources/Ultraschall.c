@@ -25,7 +25,8 @@ static portTASK_FUNCTION(USTask, pvParameters) {
 
 	for(;;) {
 	    Measure();
-	    WAIT1_Waitms(500); /* wait at least for 50 ms until the next measurement to avoid echos */
+	    WAIT1_Waitms(50); /* wait at least for 50 ms until the next measurement to avoid echos */
+	    FRTOS1_vTaskDelay(500/portTICK_RATE_MS);
 	}
 }
 
@@ -73,7 +74,7 @@ static void Measure(void) {
   us = US_Measure_us();
   cm = US_usToCentimeters(us, 22);
 
-  MyXprintf("Distanz:\t%i\r\n",cm);
+  DEBUG("Distanz:\t%i\r\n",cm);
 
 }
 

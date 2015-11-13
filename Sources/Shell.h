@@ -10,6 +10,7 @@
 
 /*! \brief Serial driver initialization */
 void SHELL_Init(void);
-unsigned int MyXprintf(const char *fmt, ...);
+unsigned int sendHost(const char *fmt, ...);
+unsigned int DEBUG(const char *fmt, ...);
 
 #endif /* SHELL_H_ */
